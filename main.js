@@ -20,25 +20,25 @@
 //*Example
 // For input [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15], you should return [10, -65].
 
-function countPositivesSumNegatives(input) {
-  const answer = [];
+// function countPositivesSumNegatives(input) {
+//   const answer = [];
 
-  let pos = 0;
-  let neg = 0;
+//   let pos = 0;
+//   let neg = 0;
 
-  if (input && input.length) {
-    for (let i = 0; i < input.length; i += 1) {
-      if (input[i] > 0) {
-        pos += 1;
-      } else {
-        neg += input[i];
-      }
-    }
-    answer.push(pos);
-    answer.push(neg);
-  }
-  return answer;
-}
+//   if (input && input.length) {
+//     for (let i = 0; i < input.length; i += 1) {
+//       if (input[i] > 0) {
+//         pos += 1;
+//       } else {
+//         neg += input[i];
+//       }
+//     }
+//     answer.push(pos);
+//     answer.push(neg);
+//   }
+//   return answer;
+// }
 
 // //! reduce
 
@@ -810,11 +810,29 @@ function countPositivesSumNegatives(input) {
 
 
 
-let value = 9;
-const obj = {};
+// let value = 9;
+// const obj = {};
 
-obj:{
-	value: ++value;
-}
- const result = obj.value + value
-// answer: NaN
+// obj:{
+// 	value: ++value;
+// }
+//  const result = obj.value + value
+// // answer: NaN
+
+// // Complete the solution so that it returns true if the first argument(string) passed in ends with the 2nd argument (also a string).
+
+
+// function solution(str, ending){
+//  // Первое решение
+// return str.indexOf(ending, str.length - ending.length) !== -1;
+// // второе решение
+// return str.endsWith(ending);
+
+// }
+
+
+
+
+// console.log(solution('abcde', 'cde')); // true
+// console.log(solution('abcde', 'abc')); // false
+// console.log(solution('sumo', 'omo')); // false
