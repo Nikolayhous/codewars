@@ -836,3 +836,39 @@
 // console.log(solution('abcde', 'cde')); // true
 // console.log(solution('abcde', 'abc')); // false
 // console.log(solution('sumo', 'omo')); // false
+
+
+
+// // Изограмма - это слово, в котором нет повторяющихся букв, последовательных или непоследовательных. 
+// // Реализуйте функцию, которая определяет, является ли строка, содержащая только буквы, изограммой. 
+// // Предположим, что пустая строка является изограммой. Игнорировать регистр букв.
+// // /ab+c/i;
+// function isIsogram(str){
+
+//     // return !/(.).*\1|\d/i.test(str);
+
+//     return new Set(str.toUpperCase()).size == str.length;
+//     };
+
+// console.log(isIsogram("isogram")); // true );
+// console.log(isIsogram("aba")); // false, "same chars may not be adjacent" );
+// console.log(isIsogram("moOse")); // false, "same chars may not be same case" );
+// console.log(isIsogram("Dermatoglyphics")); // true );
+// console.log(isIsogram("isIsogram")); // false );
+// console.log(isIsogram("")); // true, "an empty string is a valid isogram" );
+
+
+// function stray(numbers) {
+//     //take first element
+//     let strayChar = numbers[0];
+
+//     // see if it is different from the next 2
+//     if (strayChar !== numbers[1] && strayChar !== numbers[2]) return strayChar;
+
+//     // if not find the first value that is different
+//     for(let i = 1; i < numbers.length; i++){
+//       if(strayChar !== numbers[i])return numbers[i];
+//     }
+//  }
+//   stray([1, 1, 2]); // 2);
+
